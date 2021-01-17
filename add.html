@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add competitors</title>
+</head>
+<body>
+<h1> Добавление участников соревнований </h1>
+<pre>Формат данных BBBB NN HH:MM:SS.zhqxGGCR
+    Где BBBB - номер участника,
+    NN - id канала,
+    HH - Часы, MM - минуты, SS - секунды,
+    zhq - десятые сотые тысячные,
+    GG - номер группы,
+    CR - «возврат каретки» (закрывающий символ),
+
+    Пример данных: 0002 C1 01:13:02.877 00[CR]
+   </pre>
+    <form method="post">
+        <input type="text" name="data" placeholder="0002 C1 01:13:02.877 00">
+        <input type="submit" class="btn btn-success" value="Отправить">
+        <p></p>
+    </form>
+<h2><a href="/results">Results</a> </h2>
+</body>
+</html>

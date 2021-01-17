@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>results</title>
+</head>
+
+<h1>Результаты</h1>
+<p></p>
+<h2>Группа №00</h2>
+{%for el in results%}
+    <p>
+        Cпортсмен, нагрудный номер {{el.player_number}},
+        прошёл отсечку {{el.chanel_id}}
+        в {{el.time_hour}}:{{el.time_minute}}:{{el.time_sec}},{{el.time_part_sec}}
+    </p>
+
+
+{%endfor%}
+<div >
+
+</div>
+</html>
